@@ -9,7 +9,7 @@ listings, and only load them when they're visible in the viewport when the user 
 
 ### Implementation
 
-One way to dunamically import components on interaction is by using the [Intersections Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API). 
+One way to dinamically import components on interaction is by using the [Intersections Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API). 
 There's a React hook called `react-intersection-observer` that we can use to easily detect whether a component is visible in the viewport.
 
 Lazy-loading the `Footer` component would result in something like this: 

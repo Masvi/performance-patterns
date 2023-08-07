@@ -3,7 +3,7 @@
 Pre-render certain pages, and render the other pages on-demand.
 
 Static rendering comes with many diferents performances benefits, but it can up in long build times if we have many pages to pre-render. We can also
-only update the ontent of our page by redeploying the website, which isn't a great user experience. 
+only update the content of our page by redeploying the website, which isn't a great user experience. 
 
 Incremental Static Generation allows us to only pre-render a subset of pages, for example pages that are likely to be requested by the user, and 
 render the rest on-demand. When the user requests a page that hasn't been pre-rendered yet, the page gets server-rendered, after which can get 

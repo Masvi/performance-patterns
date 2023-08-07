@@ -41,3 +41,10 @@ export function getStaticPaths() {
   }
 }
 ```
+
+### Tradeoffs
+
+- `TTFB`: The Time To First Byte can be fast, since the initial HTML does not contain large components.
+- `FCP`: The First Contentful Paint can occur once the HTML has been parsed and rendered.
+- `LCP`: The Largest Contentful Paint can occur at the same time as the First Contentful Paint, provided there aren't any large components such as large images or videos.
+- `TTI`: The Time To Interactive can occur once the HTML has been rendered, and the JavaScript bundle has been downloaded, parsed, and executed its contents to bind the event handlers to the components.
